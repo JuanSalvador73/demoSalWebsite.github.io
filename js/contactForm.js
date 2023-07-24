@@ -8,6 +8,7 @@ const contactMessage = document.getElementById('contact__message');
 const sendEmail = (e)=>{
     e.preventDefault()
 
+    //contactMessage.classList.remove('contact__message');
     //Check if the field has a value
     if(contactName.value === '' || contactMail === '' || contactComment.value === ''){
         contactMessage.classList.remove('color-blue');
@@ -19,6 +20,7 @@ const sendEmail = (e)=>{
         // serviceID - templateID - #form - publicKey
         emailjs.sendForm('service_wnkc01a','template_gmv5p25','#contact-form','MtSb6sXQj4SCRXi-O')
             .then(()=>{
+                contactMessage.classList.add('contact__message')
                 contactMessage.classList.add('color-blue')
                 contactMessage.textContent = 'Mensaje Enviado'
 
