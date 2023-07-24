@@ -1,0 +1,544 @@
+*{
+  background-color: #00000C; /*#00000C;*/
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /*overflow-y: hidden;*/
+    /*Este esconde el scroll pero se activa en index.ts*/
+    /*
+      overscroll-behavior: none;
+    
+    */
+  }
+
+  /*****************************Estilos Generales*****************************/
+
+  .container{
+    width: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section{
+    display: flex;
+    width: 100vw;
+    /*height: 100vh;*/
+    min-height: 100vh; 
+    border: 1px solid rgb(211, 41, 146);
+    padding: 1.5rem .5rem;
+  }
+
+
+  /* Estilos Seccion First Hero*/
+
+
+  .section-one--container{
+    width: 660px;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding-left: 1.5%;
+    border: 1px solid blue;
+  }
+
+  .section-one--container h1{
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 100;
+    color: white;
+  }
+
+  .section-one--container .mainTitle{
+    font-size: 5rem;
+  }
+
+  .section-one--container h2{
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 100;
+    color: white;
+    
+  }
+
+  .section-one--container .subTitle {
+    font-size: 2.5rem;
+  }
+
+
+
+
+
+
+   /***************************** Estilos Seccion Second*****************************/
+
+  .second{
+    display: flex;
+    padding-top: 1rem;
+  }
+
+  .second_Div--Title{
+    margin-top: 1px;
+    border: 1px solid red;
+  }
+
+  .second .section-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-two--container {
+    display: flex;
+    width: 510px;
+    margin-top: 5%;
+    margin-left: 40%;
+    padding-left: 1.5%;
+    border: 1px solid green;
+  }
+
+  .box-title h3{
+    font-family: 'DM Sans', 
+    sans-serif;
+    
+  }
+
+  .box-title .subSectionTitle{
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .second{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second h2{
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+  }
+
+  .second .section-title{
+    font-size: 3.5rem;
+    font-weight: 100;
+  }
+
+  .section-two--container .skill-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-two--container .box-title{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+  }
+
+  .section-two--container .container-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+  }
+
+  .section-two--container  .container-boxes .box{
+    width: 140px;
+    border: 1px solid #1881AA;
+  }
+
+  .container-boxes .box {
+    margin-bottom: .8rem;
+    margin-right: .8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 145px;
+    
+  }
+
+  .container-boxes .box img{
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+    padding: 1rem;
+    width: 3px;
+  }
+
+  .container-boxes .box p{
+    font-size: 1rem;
+  }
+
+
+  /**************************** Estilos Seccion Third*****************************/
+
+
+
+  .section-third--container {
+    display: flex;
+    width: 510px;
+    margin-top: 5%;
+    margin-right: 40%;
+    padding-left: 1.5%;
+    border: 1px solid green;
+  }
+
+  .third{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .third h4{
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+  }
+
+
+  .section-third--container .skill-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-third--container .box-title{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+  }
+
+  .box-title .subSectionTitle{
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .section-third--container .container-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+  }
+
+  .section-third--container  .container-boxes .box{
+    width: 140px;
+    border: 1px solid #1881AA;
+  }
+
+  .container-boxes .box {
+    margin-bottom: .8rem;
+    margin-right: .8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: .6rem;
+    height: 145px;
+  }
+
+  .container-boxes .box img{
+    margin-top: .9rem;
+    padding: .01rem;
+    width: 58px;
+  }
+
+  .container-boxes .box p{
+    font-size: 1rem;
+  }
+
+   /***************************** Estilos Seccion Four*****************************/
+
+   .section-four--container {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    margin-top: 5%;
+    margin-left: 40%;
+    padding-left: 1.5%;
+    border: 1px solid orange;
+  }
+
+  .four {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .four_Div--Title{
+    margin-top: 1px;
+    border: 1px solid red;
+  }
+
+  .four .section-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .four h4{
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+  }
+
+  .four .section-title{
+    font-size: 3.5rem;
+    font-weight: 100;
+  }
+
+  .section-four--container .content-education p{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  .content-education{
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+  }
+
+
+
+    /***************************** Estilos Seccion Five*****************************/
+
+    .section-five--container {
+      display: flex;
+      flex-direction: column;
+      width: 510px;
+      margin-top: 5%;
+      margin-right: 40%;
+      padding-left: 1.5%;
+      border: 1px solid orange;
+    }
+  
+    .five {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+  
+    .five h4{
+      font-family: 'Bruno Ace', cursive;
+      color: white;
+    }
+  
+    .section-five--container .content-education p{
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+    }
+  
+    .content-education{
+      margin-top: 2rem;
+      margin-bottom: .8rem;
+    }
+
+
+    /***************************** Estilos Seccion Six*****************************/
+
+    .six{
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+
+    .six h4{
+      font-family: 'DM Sans', sans-serif;
+      color: white;
+    }
+
+    .six_Div--Title{
+      margin-top: 1px;
+      border: 1px solid red;
+    }
+  
+    .six .section-title{
+      display: flex;
+      justify-content: center;
+    }
+
+    .six .section-title{
+      font-size: 3.5rem;
+      font-weight: 100;
+    }
+
+    .section-six--container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5%;
+      width: 90%;
+      height: auto;
+      border: 1px solid yellow;
+      flex-wrap: wrap;
+    }
+
+    .content-experience {
+      display: flex;
+      /*flex-direction: row;*/
+      flex-wrap: wrap;
+      /*justify-content: space-between;*/
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-experience {
+      border: 1px solid blueviolet;
+      width: 330px;
+      height: 180px;
+      background-color: rgba(21, 114, 206, 0.176);
+      margin-top: 3%;
+      margin-left: 3rem;
+      margin-bottom: 3rem;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .box-experience .circle{
+      position: absolute;
+      border-radius: 80px;
+      border: 1px dotted gray;
+      margin-top: 2px;
+      background-color: rgba(10, 25, 40, 0.952);
+      width: 30px;
+      height: 30px;
+      top: -18px;
+      left: 10px;
+    }
+
+    /*
+        .box-experience {
+      margin-top: 8%;
+      margin-left: 5%;
+    }
+    */
+    .box-history{
+      display: flex;
+      flex-direction: column;
+      margin: 4%;
+      background-color: rgba(21, 114, 206, 0.00);
+    }
+
+    .box-history p{
+      line-height: 1.2rem;
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      font-size: 1rem;
+      background-color: rgba(21, 114, 206, 0.00);
+    }
+
+      /***************************** Estilos Seccion Seven*****************************/
+
+
+      .section-seven--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+        width: 90%;
+        height: auto;
+        border: 1px solid yellow;
+        flex-wrap: wrap;
+        /*
+                width: 510px;
+        margin-top: 5%;
+        margin-right: 40%;
+        padding-left: 1.5%;
+        border: 1px solid orange;
+        */
+      }
+
+      .seven_Div--Title{
+        margin-top: 0px;
+        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .seven {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-top: 1rem;
+      }
+    
+      .seven h4{
+        font-family: 'Bruno Ace', cursive;
+        color: white;
+      }
+
+      .seven .section-title{
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem;
+        font-weight: 100;
+      }
+
+      .content-projects {
+        display: flex;
+        /*flex-direction: row;*/
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
+        align-items: center;
+        justify-content: center;
+      }
+
+      .proyecto-envolvente{
+          border: 1px solid rgb(43, 205, 226);
+          width: 280px;
+          height: 180px;
+          background-color: rgba(21, 114, 206, 0.176);
+          margin-top: 3%;
+          margin-left: 3rem;
+          margin-bottom: 3rem;
+          border-radius: 8px;
+          position: relative;
+      }
+
+
+      /***************************** Estilos Seccion eight*****************************/
+
+      .section-eight--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid greenyellow;
+        width: 90%;
+        /*
+                
+        margin-top: 5%;
+        margin-right: 40%;
+        padding-left: 1.5%;
+        border: 1px solid orange;
+        */
+      }
+
+      .eight {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+      }
+    
+      .eight h4{
+        font-family: 'Bruno Ace', cursive;
+        color: white;
+      }
+
+      .eight_Div--Title{
+        display: flex;
+        justify-content: center;
+        margin-top: 1px;
+        border: 1px solid red;
+      }
+
+      .eight .section-title{
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem;
+        font-weight: 100;
+      }
+
+      .eight .content-contact{
+        border: 1px solid goldenrod;
+      }
