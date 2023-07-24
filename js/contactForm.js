@@ -31,6 +31,7 @@ const sendEmail = (e)=>{
                 alert('Algo ha fallado...', error)
             })
 
+            contactMessage.classList.remove('contact__message');
             contactName.value = ''
             contactMail.value = ''
             contactComment.value = ''
