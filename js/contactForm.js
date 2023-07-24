@@ -26,12 +26,13 @@ const sendEmail = (e)=>{
 
                 setTimeout(()=>{
                     contactMessage.textContent = ''
+                    contactMessage.classList.remove('contact__message')
                 }, 5000)
             }, (error) =>{
                 alert('Algo ha fallado...', error)
             })
 
-            contactMessage.classList.remove('contact__message');
+            //contactMessage.classList.remove('contact__message')
             contactName.value = ''
             contactMail.value = ''
             contactComment.value = ''
